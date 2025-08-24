@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int curmonth=sc.nextInt();
+    int num=sc.nextInt();
+    int nextmonth=curmonth+num;
+    while(nextmonth>12){
+      nextmonth-=12;
+    }
+    System.out.println(nextmonth);
+  }
+}
